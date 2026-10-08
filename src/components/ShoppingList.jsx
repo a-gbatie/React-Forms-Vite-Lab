@@ -11,6 +11,7 @@ function ShoppingList({ items, onItemFormSubmit }) {
     setSelectedCategory(event.target.value);
   }
 
+  // Displays only items matching both the category and search criteria
   const itemsToDisplay = items.filter((item) => {
     const matchesCategory = selectedCategory === "All" || item.category === selectedCategory;
 

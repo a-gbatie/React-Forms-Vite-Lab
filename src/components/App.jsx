@@ -7,6 +7,7 @@ function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Adds a new item to the end without mutating the existing array
   function handleAddItem(newItem) {
     setItems((currentItems) => [...currentItems, newItem]);
   }
